@@ -1,0 +1,11 @@
+@mixin hide-on-mobile {
+    @media (max-width: 400px) {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@mixin margin-moble{
+    margin-top: ;
+}

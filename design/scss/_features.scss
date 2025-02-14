@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'futurademiC';
+    src: url(../fonts/futurademic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.features {
+    padding: 100px 0;
+    font-family: 'Montserrat';
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: 1;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 1290px;
+        margin: 0 auto;
+    }
+
+    .feature {
+        text-align: center;  
+        width: 300px;
+        height: 219px;
+        
+        &__icon {
+            width: 158px;
+            height: 100px;
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 29.26px;
+            color: #000000;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 600;
+            color: #000000;
+            font-family: 'futurademiC';
+        }
+    }
+}

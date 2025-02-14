@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'futurademiC';
+    src: url(../fonts/futurademic-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.wrapper {
+    width: 1600px;
+    height: 810px;
+    background: url("../images/bg.jpg") no-repeat center;
+    background-position: left center;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+.header {
+    &__container {
+        width: 1285px;
+        height: 53px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 22px;
+        padding-left: 160px;
+        @include hide-on-mobile;
+    }
+
+    &__social {
+        display: flex;
+        width: 305px;
+        height: 53px;
+        gap: 10px;
+    }
+
+    .icon {
+        width: 53px;
+        height: 53px;
+    }
+
+    &__social .icon--vk { background-image: url("../images/icon_vk.svg"); }
+    &__social .icon--twitter { background-image: url("../images/icon_tw.svg"); }
+    &__social .icon--instagram { background-image: url("../images/icon_ig.svg"); }
+    &__social .icon--facebook { background-image: url("../images/icon_fb.svg"); }
+    &__social .icon--linkedin { background-image: url("../images/icon_ok.svg"); }
+
+    .button--partner {
+        width: 216px;
+        height: 46px;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        font-family: 'futurademiC';
+    }
+}
